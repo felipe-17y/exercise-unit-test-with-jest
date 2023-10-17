@@ -9,7 +9,6 @@ let oneEuroIs = {
     "GBP": 0.8, // british pound
 }
 
-// just a console log for ourselves.
 console.log(sum(7, 3))
 
 
@@ -22,20 +21,16 @@ const fromEuroToDollar = function(valueInEuro) {
 }
 
 const fromDollarToYen = function(valueInDollar) {
-    // convertimos el valor a dolares
     let valueInYen = valueInDollar / 1.2 * 127.9;
-    // retornamos el valor
-    return valueInYen;
+   return valueInYen;
 }
 
 const fromYenToPound = function(valueInYen) {
-    // convertimos el valor a dolares
-    let valueInPound = valueInYen / 127.9 * 0.8;
-    // retornamos el valor
+     let valueInPound = valueInYen / 127.9 * 0.8;
     return valueInPound;
 }
 
-// we include fromEuroToDollar here as well because it needs to be exported
+
 module.exports = {
     sum,
     fromEuroToDollar,
